@@ -17,8 +17,7 @@ function getComputerChoice() {
 console.log(getComputerChoice());
 
 function getHumanChoice() {
-    const Option = prompt("Rock, Paper Or Kechi?");
-    return Option;
+    return prompt("Rock, Paper Or Kechi?");
 
 }
 
