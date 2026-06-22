@@ -17,8 +17,8 @@ function getComputerChoice() {
 console.log(getComputerChoice());
 
 function getHumanChoice() {
-    const Choice = prompt("Rock, Paper Or Kechi?");
-    return Choice;
+    const Option = prompt("Rock, Paper Or Kechi?");
+    return Option;
 
 }
 
@@ -28,7 +28,7 @@ let HumanScore = 0;
 let ComputerScore = 0;
 
 function playRound(HumanChoice, ComputerChoice) {
-    const Human = HumanChoice.ToLowerCase();
+    const Human = HumanChoice.toLowerCase();
     const Computer = ComputerChoice;
 
     console.log(`Human: ${Human}`, `Computer: ${Computer}`)
