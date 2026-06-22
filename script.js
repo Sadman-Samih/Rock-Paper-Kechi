@@ -37,7 +37,15 @@ function playRound(HumanChoice, ComputerChoice) {
         return "Its a tie!"
     }
 
-    else if ((Human === "Rock" && Computer === "Kechi") || (Human === "Paper" && Computer === "Rock") || (Human === "Kechi" && Computer === "Paper")) { console.log("You Win !"); }
-
+    else if ((Human === "Rock" && Computer === "Kechi") || (Human === "Paper" && Computer === "Rock") || (Human === "Kechi" && Computer === "Paper")) { console.log(`You win this round! ${Human.charAt(0).toUpperCase() + Human.slice(1)} beats ${Computer}.`);
+        HumanScore++; }
+    else {
+        console.log(`You lose this round! ${Computer.charAt(0).toUpperCase() + Computer.slice(1)} beats ${Human}.`);
+        ComputerScore++;
+    }
+    console.log(`Current Score -> Human: ${HumanScore} | Computer: ${ComputerScore}`);
+    console.log("-----------------------------------------");
 }
+
+
 
