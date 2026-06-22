@@ -37,7 +37,7 @@ function playRound(HumanChoice, ComputerChoice) {
         return "Its a tie!"
     }
 
-    else if ((Human === "Rock" && Computer === "Kechi") || (Human === "Paper" && Computer === "Rock") || (Human === "Kechi" && Computer === "Paper")) {
-    }
+    else if ((Human === "Rock" && Computer === "Kechi") || (Human === "Paper" && Computer === "Rock") || (Human === "Kechi" && Computer === "Paper")) { console.log("You Win !"); }
+
 }
 
