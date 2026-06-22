@@ -61,8 +61,7 @@ playRound(getComputerChoice(), getHumanChoice());
 playRound(getComputerChoice(), getHumanChoice());
 //ROUND 5
 playRound(getComputerChoice(), getHumanChoice());
-//ROUND 6
-playRound(getHumanChoice(), getComputerChoice());
+
 
 console.log("--- FINAL RESULTS ---");
 console.log(`Final Score -> You: ${HumanScore} | Computer: ${ComputerScore}`);
