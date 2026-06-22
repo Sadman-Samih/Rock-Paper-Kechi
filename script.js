@@ -18,7 +18,7 @@ console.log(getComputerChoice());
 
 function getHumanChoice() {
     const Choice = prompt("Rock, Paper Or Kechi?");
-    return "Choice";
+    return Choice;
 
 }
 
@@ -47,5 +47,32 @@ function playRound(HumanChoice, ComputerChoice) {
     console.log("-----------------------------------------");
 }
 
+console.log("STARTING THE GAME !");
 
+//ROUND 1
+playRound(getComputerChoice(), getHumanChoice());
 
+//ROUND 2
+playRound(getHumanChoice(), getComputerChoice());
+//ROUND 3
+playRound(getComputerChoice(), getHumanChoice());
+//ROUND 4
+playRound(getComputerChoice(), getHumanChoice());
+//ROUND 4
+playRound(getComputerChoice(), getHumanChoice());
+//ROUND 5
+playRound(getComputerChoice(), getHumanChoice());
+//ROUND 6
+playRound(getHumanChoice(), getComputerChoice());
+
+console.log("--- FINAL RESULTS ---");
+console.log(`Final Score -> You: ${HumanScore} | Computer: ${ComputerScore}`);
+
+if (HumanScore > ComputerScore) {
+    console.log("Congratulations! You won the entire game!");
+} else if (ComputerScore > HumanScore) {
+    console.log("Game over! The computer won the game.");
+} else {
+    console.log("The entire game ended in a tie!");
+
+}
